@@ -1,0 +1,38 @@
+<nav>
+  <div id="logo">
+    <h2> WhereToEat </h2>
+  </div>
+  <div id="nav-container">
+    <ul>
+      <li>
+        <a [routerLink]="'/'">Home</a>
+      </li>
+      <li>
+        Add Review
+      </li>
+      <li>
+        <a [routerLink]="'restaurants/smth'">Restaurants</a>
+      </li>
+      <li>
+        Profile
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<footer>
+  <ul>
+    <li>
+      About
+    </li>
+    <li>
+      Our Team
+    </li>
+    <li>
+      Terms and Policies
+    </li>
+    <li>
+      Contact
+    </li>
+  </ul>
+</footer>

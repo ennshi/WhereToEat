@@ -1,0 +1,48 @@
+@import "../../../../styles.scss";
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 78px;
+  width: 100%;
+  background-color: white;
+  color: $blue-dark;
+  letter-spacing: 0.1em;
+  font-family: 'Solway', serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+  #logo {
+    position: absolute;
+    height: 32px;
+    left: 4%;
+    top: 22px;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-container {
+    position: absolute;
+    right: 2%;
+    top: 26px;
+    width: 80%;
+  }
+
+    #nav-container ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    #nav-container li {
+      padding-right: 4%;
+    }
+
+
+
+
