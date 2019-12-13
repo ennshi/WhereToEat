@@ -2,15 +2,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NewCComponent } from './new-c/new-c.component';
+import {AppRoutingModule} from './app-routing.module';
+import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { RestaurantsPageComponent } from './restaurants-page/restaurants-page.component';
+import { RestaurantInfoPageComponent } from './restaurant-info-page/restaurant-info-page.component';
+import { UserPageComponent } from './user-page/user-page.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewCComponent
+    MainLayoutComponent,
+    HomePageComponent,
+    RestaurantsPageComponent,
+    RestaurantInfoPageComponent,
+    UserPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
