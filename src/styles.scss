@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato|Solway&display=swap');
+
+$blue-dark: #223843;
+$red-accent: #F65F55;
+$yellow-accent: #F2E863;
+$blue-light: #C7E8F3;
+$grey-light: #F7F6F6;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Solway', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+   color:inherit;
+ }
