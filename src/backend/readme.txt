@@ -1,0 +1,1 @@
+Here should be stored all the business logics and accessed from frontend only by its api (see the folder)

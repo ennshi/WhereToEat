@@ -1,6 +1,8 @@
 # Where to eat?
 Your restaurant search helper. Just tell me what you would like to eat, and I will tell you where.
 
+Disclaimer: this is not enterprise project destinated for commerce. It is for learning purposes. The main target is to systematize and summarize all the knowledge and skills learnt.
+
 ### Features
 
 - Professional design and rich feature website;
