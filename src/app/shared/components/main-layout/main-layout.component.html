@@ -1,6 +1,6 @@
 <nav>
   <div id="logo">
-    <h2> WhereToEat </h2>
+    <h2><a [routerLink]="'/'">WhereToEat</a></h2>
   </div>
   <div id="nav-container">
     <ul>
@@ -8,13 +8,13 @@
         <a [routerLink]="'/'">Home</a>
       </li>
       <li>
-        Add Review
+        <a href="#">Add Review</a>
       </li>
       <li>
         <a [routerLink]="'restaurants/smth'">Restaurants</a>
       </li>
       <li>
-        Profile
+        <a href="#">Profile</a>
       </li>
     </ul>
   </div>
@@ -23,16 +23,17 @@
 <footer>
   <ul>
     <li>
-      About
+      <a href="#">About</a>
     </li>
     <li>
-      Our Team
+      <a href="#">Our Team</a>
     </li>
     <li>
-      Terms and Policies
+      <a href="#">Terms and Policies</a>
     </li>
     <li>
-      Contact
+      <a href="#">Contact</a>
     </li>
   </ul>
+  <div id="copyright">© 2019 WhereToEat. All Rights Reserved</div>
 </footer>
