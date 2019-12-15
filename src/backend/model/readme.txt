@@ -1,0 +1,1 @@
+Contains only data type declarations, the Plain Old Javascript Objects (POJO). No logics here.
