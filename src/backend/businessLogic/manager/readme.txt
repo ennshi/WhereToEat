@@ -1,1 +1,0 @@
-Contains list of instances for model. Together, manager and model form the main vision of the subsystem

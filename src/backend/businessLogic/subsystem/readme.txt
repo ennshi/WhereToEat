@@ -1,1 +1,0 @@
-Pure business logics. Used by managers
