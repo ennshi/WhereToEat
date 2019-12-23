@@ -27,3 +27,12 @@
   text-align: center;
   padding-top: 20px;
 }
+
+#restaurants-container {
+  position: relative;
+  width: 60%;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
