@@ -1,3 +1,31 @@
-<div id="rest">
-  restaurants-page works!
-</div>
+<section id="search-form">
+  <form>
+    <div class="form-control">
+      <label>Where?</label>
+      <input type="text" placeholder="City...">
+    </div>
+
+    <div class="form-control">
+      <label>Do you know the name?</label>
+      <input type="text" placeholder="Restaurant...">
+    </div>
+
+    <button class="btn" type="submit">Search</button>
+  </form>
+</section>
+
+<section id="restaurants">
+  <header class="heading">
+    <h2>Our Recommendations</h2>
+  </header>
+
+  <div id="restaurants-container">
+    <app-restaurant></app-restaurant>
+    <app-restaurant></app-restaurant>
+    <app-restaurant></app-restaurant>
+    <app-restaurant></app-restaurant>
+    <app-restaurant></app-restaurant>
+    <app-restaurant></app-restaurant>
+  </div>
+</section>
+

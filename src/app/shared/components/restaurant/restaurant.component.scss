@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 32%;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin: 0;
+  width: 230px;
+}
+
+p {
+  width: 230px;
+  text-align: center;
+}
+
+.rating{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+}
+
+span {
+  width: 110px;
+}
+
+span:first-child {
+  text-align: left;
+}
+
+span:last-child {
+  text-align: right;
+}
+
