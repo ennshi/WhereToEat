@@ -18,6 +18,14 @@
   <header class="heading">
     <h2>Our Recommendations</h2>
   </header>
+  <div id="filter-container">
+    <span>7 restaurants</span>
+    <select>
+      <option>A-Z</option>
+      <option>By rating</option>
+      <option>Closest to you</option>
+    </select>
+  </div>
 
   <div
     *ngIf="restaurants$ | async as restaurants; else loading"
