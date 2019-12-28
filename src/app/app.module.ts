@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -9,6 +10,7 @@ import { RestaurantsPageComponent } from './restaurants-page/restaurants-page.co
 import { RestaurantInfoPageComponent } from './restaurant-info-page/restaurant-info-page.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { RestaurantComponent } from './shared/components/restaurant/restaurant.component';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { RestaurantComponent } from './shared/components/restaurant/restaurant.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,9 @@
 <div class="card">
-  <img src="../../../../assets/img/bg.jpg" alt="restaurant photo" />
-  <h4>Some Restaurant Name</h4>
-  <p>20 av. du General de Gaulle, Soumy</p>
+  <img src="../../../../assets/img/test_rest/{{ restaurant.photo[0] }}" alt="restaurant photo" />
+  <h4>{{ restaurant.name }}</h4>
+  <p>{{ restaurant.location }}</p>
   <div class="rating">
-    <span>4.5/5</span>
-    <span>25 reviews</span>
+    <span>{{ restaurant.rate }}/5</span>
+    <span>{{ restaurant.num_reviews}} reviews</span>
   </div>
 </div>

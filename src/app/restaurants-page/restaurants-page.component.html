@@ -19,13 +19,16 @@
     <h2>Our Recommendations</h2>
   </header>
 
-  <div id="restaurants-container">
-    <app-restaurant></app-restaurant>
-    <app-restaurant></app-restaurant>
-    <app-restaurant></app-restaurant>
-    <app-restaurant></app-restaurant>
-    <app-restaurant></app-restaurant>
-    <app-restaurant></app-restaurant>
+  <div
+    *ngIf="restaurants$ | async as restaurants; else loading"
+    id="restaurants-container"
+  >
+    <app-restaurant
+      *ngFor="let resto of restaurants" [restaurant] = "resto"></app-restaurant>
   </div>
+  <ng-template #loading>
+    <p>Loading....</p>
+  </ng-template>
+
 </section>
 
