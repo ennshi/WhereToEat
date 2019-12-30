@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {RestaurantsService} from '../shared/restaurants.service';
 import {Restaurant} from '../shared/interfaces';
-import {Observable, Subscription} from 'rxjs';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-restaurants-page',

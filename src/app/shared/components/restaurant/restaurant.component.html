@@ -1,5 +1,5 @@
 <div class="card">
-  <img src="../../../../assets/img/test_rest/{{ restaurant.photo[0] }}" alt="restaurant photo" />
+  <a [routerLink]="['/restaurant_info', (restaurant.id - 1) ]"><img src="../../../../assets/img/test_rest/{{ restaurant.photo[0] }}" alt="restaurant photo" /></a>
   <h4>{{ restaurant.name }}</h4>
   <p>{{ restaurant.location }}</p>
   <div class="rating">
