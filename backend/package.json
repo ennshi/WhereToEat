@@ -1,0 +1,22 @@
+{
+  "name": "where-to-eat-backend",
+  "version": "1.0.0",
+  "description": "backend for where to eat app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "mongod --dbpath ../data"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

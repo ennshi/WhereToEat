@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -9,6 +10,7 @@ import { RestaurantsPageComponent } from './restaurants-page/restaurants-page.co
 import { RestaurantInfoPageComponent } from './restaurant-info-page/restaurant-info-page.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { RestaurantComponent } from './shared/components/restaurant/restaurant.component';
+import {ApiService} from "./shared/api.service";
 
 
 @NgModule({
@@ -23,9 +25,10 @@ import { RestaurantComponent } from './shared/components/restaurant/restaurant.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

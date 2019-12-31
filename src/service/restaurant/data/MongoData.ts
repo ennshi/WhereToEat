@@ -1,4 +1,4 @@
-import {Restaurant} from '../Model/Restaurant';
+import {Restaurant} from '../../../app/shared/Model/Restaurant';
 import {IData} from './IData';
 import mongoose, { Schema } from 'mongoose';
 
@@ -21,7 +21,7 @@ class MongoData implements IData {
     return undefined;
   }
 
-  getRestaurant(id: number): Restaurant {
+  getRestaurant(id: string): Restaurant {
     return undefined;
   }
 
