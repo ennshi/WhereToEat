@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http";
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -11,6 +12,7 @@ import { RestaurantInfoPageComponent } from './restaurant-info-page/restaurant-i
 import { UserPageComponent } from './user-page/user-page.component';
 import { RestaurantComponent } from './shared/components/restaurant/restaurant.component';
 import {ApiService} from "./shared/api.service";
+
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import {ApiService} from "./shared/api.service";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]
