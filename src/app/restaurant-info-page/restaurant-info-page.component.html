@@ -1,3 +1,41 @@
-<p>
-  restaurant-info-page works!
-</p>
+<main *ngIf="restaurant; else loading">
+  <section id="heading-container">
+    <a>Back to List</a>
+    <header class="heading">
+      <h2>{{ restaurant.name }}</h2>
+    </header>
+  </section>
+
+  <section id="photo-container">
+
+  </section>
+
+  <section id="description">
+    {{ restaurant.description }}
+  </section>
+
+  <section id="rate-location-container">
+    <div id="rate">
+      <span>{{ restaurant.rate }}/5</span>
+      <span></span>
+      <span>{{ restaurant.num_reviews }} reviews</span>
+      <button>Add Review</button>
+    </div>
+
+    <div id="location">
+      <p>Google Maps</p>
+      <span>{{ restaurant.location }}</span>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <header class="heading">
+      <h2>Reviews</h2>
+    </header>
+  </section>
+</main>
+
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>
+
