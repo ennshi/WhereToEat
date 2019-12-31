@@ -19,4 +19,13 @@ export class RestaurantsService {
           }));
       }));
   }
+
+  getById(id: number): Observable<Restaurant> {
+    return this.http.get<Restaurant>(`${environment.fbDBUrl}/restaurants/${id}.json`)
+      .pipe(map((restaurant: Restaurant) => {
+        return {
+          ...restaurant
+        };
+      }));
+  }
 }
