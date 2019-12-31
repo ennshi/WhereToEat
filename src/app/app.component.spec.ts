@@ -1,11 +1,18 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {RouterTestingModule} from '@angular/router/testing'
+import {HomePageComponent} from "./home-page/home-page.component";
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HomePageComponent
       ],
+      imports: [
+        RouterTestingModule
+      ]
     }).compileComponents();
   }));
   it('should create the app', async(() => {
@@ -18,10 +25,10 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('WhereToEat-angular');
   }));
-  it('should render title in a h1 tag', async(() => {
+  it('should have router-outlet tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to WhereToEat-angular!');
+    expect(compiled.querySelector('router-outlet').textContent).toBeDefined();
   }));
 });
