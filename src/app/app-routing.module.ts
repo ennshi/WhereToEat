@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {MainLayoutComponent} from './shared/components/main-layout/main-layout.component';
-import {HomePageComponent} from './home-page/home-page.component';
-import {RestaurantsPageComponent} from './restaurants-page/restaurants-page.component';
-import {RestaurantInfoPageComponent} from './restaurant-info-page/restaurant-info-page.component';
+import {MainLayoutComponent} from './main-layout/main-layout.component';
+import {HomePageComponent} from './page/home-page/home-page.component';
+import {RestaurantsPageComponent} from './page/restaurants-page/restaurants-page.component';
+import {RestaurantInfoPageComponent} from './page/restaurant-info-page/restaurant-info-page.component';
 import {UserPageComponent} from './user-page/user-page.component';
 
 const routes: Routes = [

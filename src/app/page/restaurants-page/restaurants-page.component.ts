@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {RestaurantsService} from '../shared/restaurants.service';
-import {Restaurant} from '../shared/interfaces';
+import {RestaurantsService} from '../../shared/service/restaurants.service';
+import {Restaurant} from '../../shared/model/restaurant';
 import {Observable} from 'rxjs';
 
 @Component({

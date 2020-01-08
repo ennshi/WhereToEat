@@ -1,4 +1,4 @@
-import {Restaurant} from '../../app/shared/Model/Restaurant';
+import {Restaurant} from '../../backend-contract/Model/Restaurant';
 import {IData} from './data/IData';
 
 // TODO: Testing

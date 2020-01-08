@@ -5,13 +5,13 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
-import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { RestaurantsPageComponent } from './restaurants-page/restaurants-page.component';
-import { RestaurantInfoPageComponent } from './restaurant-info-page/restaurant-info-page.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { HomePageComponent } from './page/home-page/home-page.component';
+import { RestaurantsPageComponent } from './page/restaurants-page/restaurants-page.component';
+import { RestaurantInfoPageComponent } from './page/restaurant-info-page/restaurant-info-page.component';
 import { UserPageComponent } from './user-page/user-page.component';
-import { RestaurantComponent } from './shared/components/restaurant/restaurant.component';
-import {ApiService} from "./shared/api.service";
+import { RestaurantComponent } from './template/restaurant/restaurant.component';
+import {ApiService} from "../backend-contract/api.service";
 
 
 
