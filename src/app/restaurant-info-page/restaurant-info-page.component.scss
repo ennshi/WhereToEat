@@ -1,0 +1,78 @@
+@import "../../styles.scss";
+
+#heading-container {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  padding-top: 100px;
+  background-color: $blue-dark;
+  color: white;
+}
+
+.heading {
+  height: 54px;
+}
+
+#photo-container {
+  position: relative;
+  width: 60%;
+  height: 35%;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+#description, #rate-location-container {
+  position: relative;
+  width: 60%;
+  margin: 10px auto;
+}
+
+#rate-location-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#rate {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+#rate span:first-child {
+  font-family: Solway, serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: $blue-dark;
+}
+
+#rate span:nth-child(3) {
+  font-family: Solway, serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: $blue-dark;
+  margin-top: 10px;
+}
+
+#location {
+  width: 70%;
+  text-align: center;
+}
+
+#map {
+  width: 100%;
+  height: 150px;
+}
+
+#reviews {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}

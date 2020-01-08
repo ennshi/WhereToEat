@@ -7,7 +7,7 @@
   </section>
 
   <section id="photo-container">
-
+    <img src="../../assets/img/test_rest/{{ restaurant.photo[0] }}" alt="restaurant photo" />
   </section>
 
   <section id="description">
@@ -19,11 +19,11 @@
       <span>{{ restaurant.rate }}/5</span>
       <span></span>
       <span>{{ restaurant.num_reviews }} reviews</span>
-      <button>Add Review</button>
+      <button class="btn-red">Add Review</button>
     </div>
 
     <div id="location">
-      <p>Google Maps</p>
+      <div id="map">Google Maps</div>
       <span>{{ restaurant.location }}</span>
     </div>
   </section>
