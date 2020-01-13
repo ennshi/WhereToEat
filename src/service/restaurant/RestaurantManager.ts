@@ -17,7 +17,7 @@ export class RestaurantManager {
     return this.data.deleteRestaurant(restaurant);
   }
 
-  getRestaurant(id: number): Restaurant {
+  getRestaurant(id): Restaurant {
     return this.data.getRestaurant(id);
   }
 

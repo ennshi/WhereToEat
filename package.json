@@ -25,7 +25,8 @@
     "mongodb": "^3.4.1",
     "mongoose": "^5.8.1",
     "rxjs": "~6.2.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@angular/cdk": "^6.2.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.0",

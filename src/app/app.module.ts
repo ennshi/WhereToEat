@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from "@angular/common/http";
+import {HttpClientModule} from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
@@ -11,7 +11,10 @@ import { RestaurantsPageComponent } from './page/restaurants-page/restaurants-pa
 import { RestaurantInfoPageComponent } from './page/restaurant-info-page/restaurant-info-page.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { RestaurantComponent } from './template/restaurant/restaurant.component';
-import {ApiService} from "../backend-contract/api.service";
+import {ApiService} from '../backend-contract/api.service';
+import {MaterialModule} from './shared/material.module';
+import { LoginRegisterComponent } from './login-register/login-register.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -23,13 +26,17 @@ import {ApiService} from "../backend-contract/api.service";
     RestaurantsPageComponent,
     RestaurantInfoPageComponent,
     UserPageComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    LoginRegisterComponent
   ],
+  entryComponents: [ LoginRegisterComponent ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

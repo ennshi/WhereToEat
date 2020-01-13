@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import  { MatDialog } from '@angular/material';
+import {LoginRegisterComponent} from '../login-register/login-register.component';
 
 @Component({
   selector: 'app-main-layout',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  openDialog() {
+    this.dialog.open(LoginRegisterComponent);
   }
 
 }
